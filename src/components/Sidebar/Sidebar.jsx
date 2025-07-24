@@ -19,10 +19,11 @@ import { assets } from '../../assets/assets'
                     </div>
                 </div>
             </div>
+
             <div className="bottom">
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt="" />
-                    <p>Help</p>
+                     <p>Help</p>
                 </div>
                 <div className="bottom-item recent-entry">
                     <img src={assets.history_icon} alt="" />
