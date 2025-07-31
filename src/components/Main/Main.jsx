@@ -41,7 +41,7 @@ import { assets } from '../../assets/assets';
 
             <div className="main-bottom">
                 <div className="search-box">
-                    <input type="text" placeholder='What are some essential skills for becoming a front-end developer?' />
+                    <input type="text" placeholder='Enter The Prompt Here' />
                     <div>
                         <img src={assets.gallery_icon} alt="" />
                         <img src={assets.mic_icon} alt="" />
