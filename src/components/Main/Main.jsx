@@ -10,6 +10,35 @@ import { assets } from '../../assets/assets';
                 <p>Gemini</p>
                 <img src={assets.user_icon} alt="" />
             </div>
+
+            <div className="main-container">
+                <div className="greet">
+                    <p><span>Hello, Dev</span></p>
+                    <p>How Can I Help You Today?</p>
+                </div>
+
+                <div className="cards">
+                    <div className="card">
+                        <p>Suggest Some Place To Visit In India.</p>
+                        <img src={assets.compass_icon} alt="" />
+                    </div>
+
+                    <div className="card">
+                        <p>Explain the process of photosynthesis in simple terms</p>
+                        <img src={assets.message_icon} alt="" />
+                    </div>
+
+                    <div className="card">
+                        <p>How do you create a responsive navbar using CSS and JavaScript?</p>
+                        <img src={assets.bulb_icon} alt="" />
+                    </div>
+
+                    <div className="card">
+                        <p>What are some essential skills for becoming a front-end developer?</p>
+                        <img src={assets.code_icon} alt="" />
+                    </div>
+                </div>
+            </div>
         </div>
   )
 }
