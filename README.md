@@ -1,12 +1,83 @@
-# React + Vite
+# Gemini-AI 🔮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gemini-AI is a sleek and intuitive web-based AI chatbot built with **React.js**, styled with **CSS**, and powered by Google's **Gemini API**. It enables users to interact with a smart AI assistant directly from their browser.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧠 Ask anything – Gemini handles it!
+- ⚛️ Built with React.js for a dynamic frontend.
+- 🎨 Clean and responsive UI with custom CSS.
+- 🔌 Integrated with Gemini API for real-time AI responses.
+- 💬 Conversation history (optional feature).
+- 📱 Fully responsive and mobile-friendly.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|------------|-------------|
+| React.js   | JavaScript library for building UI |
+| CSS        | Styling the components |
+| Gemini API | Backend AI response engine |
+
+---
+
+## 🧾 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/Gemini-AI.git
+cd Gemini-AI
+```
+### 3. Configure Gemini API
+Create a .env file in the root directory and add your Gemini API key:
+
+env
+Copy code
+VITE_GEMINI_API_KEY=your_api_key_here
+🔐 Never expose your API key in public repositories.
+
+### 4. Run the App
+bash
+Copy code
+npm run dev
+### 📁 Project Structure
+bash
+Copy code
+Gemini-AI/
+│
+├── public/             # Static assets
+├── src/
+│   ├── components/     # React components
+│   ├── config/         # Gemini API logic
+│   ├── App.jsx         # Main app file
+│   └── index.css       # Global styles
+│
+├── .env                # API key (not committed)
+├── package.json
+└── README.md
+📸 Screenshots
+(Add screenshots of your app UI here)
+
+### 🤝 Contributing
+Pull requests are welcome!
+For major changes, please open an issue first to discuss what you’d like to change.
+
+### 📄 License
+This project is licensed under the MIT License.
+
+🙋‍♂️ Author
+Adishwar Raj
+GitHub: @Judas-u
+Connect on LinkedIn
+
+yaml
+Copy code
+
+---
+
+✅ You can copy this and paste it into your `README.md` file directly. Let me kno
