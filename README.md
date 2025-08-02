@@ -34,20 +34,23 @@ git clone https://github.com/your-username/Gemini-AI.git
 cd Gemini-AI
 ```
 ### 3. Configure Gemini API
-Create a .env file in the root directory and add your Gemini API key:
 
-env
-Copy code
+Create a `.env` file in the root directory and add your Gemini API key:
+
+```env
 VITE_GEMINI_API_KEY=your_api_key_here
+```
+
 🔐 Never expose your API key in public repositories.
 
 ### 4. Run the App
 bash
 Copy code
+```
 npm run dev
+```
 ### 📁 Project Structure
-bash
-Copy code
+
 Gemini-AI/
 │
 ├── public/             # Static assets
@@ -60,8 +63,7 @@ Gemini-AI/
 ├── .env                # API key (not committed)
 ├── package.json
 └── README.md
-📸 Screenshots
-(Add screenshots of your app UI here)
+
 
 ### 🤝 Contributing
 Pull requests are welcome!
