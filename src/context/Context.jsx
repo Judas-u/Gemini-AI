@@ -18,15 +18,28 @@ const ContextProvider = (props) => {
         }, 75 * index)
     }
 
+    const newChat = () => {
+        setLoading(false); // Reset loading state
+        setShowResult(false); // Hide result section
+    }
+
     const onSent = async(prompt) => {
 
         setResultData(""); // Clear previous result
         setLoading(true);   // Set loading state
         setShowResult(true); // Show result section
-        setRecentPrompt(input); // Set the recent prompt
-        setPrevPrompts((prev) => [...prev, input]); // Add input to previous prompts
 
-        const response = await runChat(input)
+        let response;
+        if(prompt != undefined) {
+            response = await runChat(prompt); // Call the chat function with the prompt
+            setRecentPrompt(prompt); // Set the recent prompt
+        } else {
+            setPrevPrompts((prev) => [...prev, input]); // Add recent prompt to previous prompts
+            setRecentPrompt(input); // Set the recent prompt
+            response = await runChat(input); // Call the chat function with the input
+        }
+         
+
         let responseArray = response.split("**");
         let newResponse = "";  // to reove "undefined" from the response
 
@@ -65,6 +78,7 @@ const ContextProvider = (props) => {
         resultData,
         input,
         setInput,
+        newChat
     }
 
     return (

@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     animation: fadeIn 2.0s;
+    animation: fadeIn 1.5s;
 }
 .sidebar .recent-title{
     margin-top: 30px;
@@ -67,4 +68,11 @@
     .sidebar{
         display: none;
     }
+}
+
+@nedia (max-width:600px){
+    .sidebar{
+        display: node
+    }
+     
 }

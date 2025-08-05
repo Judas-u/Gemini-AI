@@ -76,7 +76,10 @@ import { Context } from '../../context/Context';
                     <div>
                         <img src={assets.gallery_icon}  />
                         <img src={assets.mic_icon}  />
-                        <img onClick={()=> onSent()} src={assets.send_icon}  />
+                        {input 
+                        ? <img onClick={()=> onSent()} src={assets.send_icon}  />
+                        : null
+                        }
                     </div>
                 </div>
                 <p className='bottom-info'>
