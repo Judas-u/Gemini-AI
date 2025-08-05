@@ -24,10 +24,11 @@ const ContextProvider = (props) => {
         setLoading(true);   // Set loading state
         setShowResult(true); // Show result section
         setRecentPrompt(input); // Set the recent prompt
+        setPrevPrompts((prev) => [...prev, input]); // Add input to previous prompts
 
         const response = await runChat(input)
         let responseArray = response.split("**");
-        let newResponse;
+        let newResponse = "";  // to reove "undefined" from the response
 
         for(let i = 0; i < responseArray.length; i++) {
             if(i === 0 || i % 2 !== 1) {
