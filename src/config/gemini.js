@@ -4,12 +4,12 @@
 // npm install @google/generative-ai
 
 import {
-  GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold,
+    GoogleGenerativeAI,
+    HarmCategory,
+    HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const API_KEY = "API_KEY"; // Replace with your actual API key
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const MODEL_NAME = "gemini-1.5-flash";
 
 async function runChat(prompt) {
