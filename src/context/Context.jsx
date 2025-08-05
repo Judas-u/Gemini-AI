@@ -12,14 +12,31 @@ const ContextProvider = (props) => {
     const [loading, setLoading] = useState(false);
     const [resultData, setResultData] = useState("");
 
+    const delayPara = (index, nextWord) => {
+        
+    }
+
     const onSent = async(prompt) => {
 
         setResultData(""); // Clear previous result
         setLoading(true);   // Set loading state
         setShowResult(true); // Show result section
         setRecentPrompt(input); // Set the recent prompt
+
         const response = await runChat(input)
-        setResultData(response);  // Set the result data
+        let responseArray = response.split("**");
+        let newResponse;
+
+        for(let i = 0; i < responseArray.length; i++) {
+            if(i === 0 || i % 2 !== 1) {
+                newResponse += responseArray[i];
+            }
+            else {
+                newResponse += " <b>"+responseArray[i]+"</b>";
+            }
+        }
+        let newResponse2 = newResponse.split("*").join("</br>");
+        setResultData(newResponse2);  // Set the result data
         setLoading(false);  // Hide Loading state
         setInput(""); // Clear input field
 
