@@ -8,7 +8,7 @@ import { assets } from '../../assets/assets';
     <div className='main'>
         <div className="nav">
             <p>Gemini</p>
-            <img src={assets.user_icon} alt="" />
+            <img src={assets.user_icon}  />
         </div>
 
         <div className="main-container">
@@ -20,22 +20,22 @@ import { assets } from '../../assets/assets';
             <div className="cards">
                 <div className="card">
                     <p>Suggest Some Place To Visit In India.</p>
-                    <img src={assets.compass_icon} alt="" />
+                    <img src={assets.compass_icon}  />
                 </div>
 
                 <div className="card">
                     <p>Explain the process of photosynthesis in simple terms</p>
-                    <img src={assets.message_icon} alt="" />
+                    <img src={assets.message_icon}  />
                 </div>
 
                 <div className="card">
                     <p>How do you create a responsive navbar using CSS and JavaScript?</p>
-                    <img src={assets.bulb_icon} alt="" />
+                    <img src={assets.bulb_icon}  />
                 </div>
 
                 <div className="card">
                     <p>What are some essential skills for becoming a front-end developer?</p>
-                    <img src={assets.code_icon} alt="" />
+                    <img src={assets.code_icon}  />
                 </div>
             </div>
 
@@ -43,9 +43,9 @@ import { assets } from '../../assets/assets';
                 <div className="search-box">
                     <input type="text" placeholder='Enter The Prompt Here' />
                     <div>
-                        <img src={assets.gallery_icon} alt="" />
-                        <img src={assets.mic_icon} alt="" />
-                        <img src={assets.send_icon} alt="" />
+                        <img src={assets.gallery_icon}  />
+                        <img src={assets.mic_icon}  />
+                        <img src={assets.send_icon}  />
                     </div>
                 </div>
                 <p className='bottom-info'>
