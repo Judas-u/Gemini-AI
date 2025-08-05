@@ -127,3 +127,21 @@
 .result::-webkit-scrollbar {
     display: none;
 }
+
+.result-title {
+    margin: 40px 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img {
+    width: 40px;
+    border-radius: 50%;;
+}
+
+.result-data {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
