@@ -17,6 +17,7 @@ const ContextProvider = (props) => {
         setResultData(""); // Clear previous result
         setLoading(true);   // Set loading state
         setShowResult(true); // Show result section
+        setRecentPrompt(input); // Set the recent prompt
         const response = await runChat(input)
         setResultData(response);  // Set the result data
         setLoading(false);  // Hide Loading state
