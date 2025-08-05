@@ -16,6 +16,10 @@ import { Context } from '../../context/Context';
         </div>
 
         <div className="main-container">
+
+            {!showResult   
+            ?<>
+
             <div className="greet">
                 <p><span>Hello, Dev</span></p>
                 <p>How Can I Help You Today?</p>
@@ -42,6 +46,11 @@ import { Context } from '../../context/Context';
                     <img src={assets.code_icon}  />
                 </div>
             </div>
+            </>
+            : <div className='result'>
+                
+            </div>
+            }
 
             <div className="main-bottom">
                 <div className="search-box">

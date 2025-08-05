@@ -14,14 +14,14 @@ const ContextProvider = (props) => {
 
     const onSent = async(prompt) => {
 
-        setResultData("");
-        setLoading(true);
-        setShowResult(true);
+        setResultData(""); // Clear previous result
+        setLoading(true);   // Set loading state
+        setShowResult(true); // Show result section
         const response = await runChat(input)
-        setResultData(response);
-        setLoading(false);
-        setInput("");
-        
+        setResultData(response);  // Set the result data
+        setLoading(false);  // Hide Loading state
+        setInput(""); // Clear input field
+
     }
 
  
