@@ -9,8 +9,7 @@ import {
     HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const API_KEY = process.env.VITE_GEMINI_API_KEY ||
-               import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const MODEL_NAME = "gemini-1.5-flash";
 
 async function runChat(prompt) {
